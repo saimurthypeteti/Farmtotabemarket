@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Add the same CSS styles as before here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #main {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Create Account</h1>
+        <form onsubmit="return registerUser()">
+            <label for="name">NAME:</label>
+            <input id="name" type="text" name="name" placeholder="Full name" required>
+            <span id="nameerror" class="error"></span>
+
+            <label for="email">EMAIL:</label>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <span id="emailerror" class="error"></span>
+
+            <label for="password">PASSWORD:</label>
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <span id="passworderror" class="error"></span>
+
+            <input type="submit" value="Create Account" />
+        </form>
+        <p>Already have an account? <a href="loging.html">Login here</a></p>
+    </div>
+
+    <script>
+        function registerUser() {
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var password = document.getElementById("password").value;
+
+            // Check if user already exists
+            var existingUser = localStorage.getItem(email);
+            if (existingUser) {
+                document.getElementById("emailerror").innerText = "User already exists. Please use a different email.";
+                return false;
+            }
+
+            // Store user data in localStorage
+            var userData = {
+                name: name,
+                email: email,
+                password: password
+            };
+            localStorage.setItem(email, JSON.stringify(userData));
+
+            alert("Account created successfully! You can now log in.");
+            window.location.href = "loging.html"; // Redirect to login page
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>
