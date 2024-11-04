@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('farm_land-2.jpg') center center/cover no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#d1 {
+    background-color: #228B22;
+    color: #fff;
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+#d1 a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#d1 a:hover {
+    text-decoration: underline;
+}
+
+#farm1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#farm1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2F4F4F;
+}
+
+.farm-profile {
+    display: flex;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.8);
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.farm-profile img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.farm-profile p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.farm-profile p b {
+    font-weight: 600;
+}
+
+footer {
+    color: white;
+    background-color: #228B22;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #main {
+        padding: 10px;
+    }
+
+    #d1 {
+        padding: 15px;
+    }
+
+    #d1 a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    #farm1 h3 {
+        font-size: 20px;
+    }
+
+    .farm-profile {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .farm-profile img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    #d1 a {
+        font-size: 12px;
+        margin: 0 3px;
+    }
+
+    #farm1 h3 {
+        font-size: 18px;
+    }
+
+    .farm-profile p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
