@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style-log.css"> 
+    
+</head>
+<body>
+    <div id="d1">
+        <h1>Farm-to-Table Marketplace</h1>
+        <nav>
+            <a href="vegetables.html">Back to Vegetables</a>
+            
+        </nav>
+    </div>
+    <div id="main">
+        <h1>Login</h1>
+        <form onsubmit="return loginUser()">
+            <label for="email">EMAIL:</label>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <span id="emailerror" class="error"></span>
+
+            <label for="password">PASSWORD:</label>
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <span id="passworderror" class="error"></span>
+
+            <input type="submit" value="Login" />
+        </form>
+    
+    </div>
+</body>
+
+</html>
