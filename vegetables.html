@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-veg.css">
+   
+    <script src="veg.js">
+        
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="d1">
+            <div id="header">
+                <h1>Farm-to-Table Marketplace</h1>
+                
+            </div>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="farmer.html">Farmer Details</a>
+            <a href="loging.html">Login</a>
+            <a href="#" id="cart-link" onclick="viewCart()">
+                <img src="cart.png" alt="Cart Icon"> View Cart <span id="cart-count">(0)</span>
+            </a>
+        </div>
+        <div id="header">
+            <h3>Available Vegetables:</h3>
+        </div>
+
+        <div class="vegetable-list">
+            <div class="vegetable-item">
+                <img src="carrot.png" alt="Carrot">
+                <p id="fresh">Fresh</p>
+                <p id="name">Carrot</p>
+                
+                <p class="vegetable-price">₹40.00</p>
+                <p class="vegetable-new-price">₹30.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('carrot')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="potato.png" alt="Potato">
+                <p id="fresh">Fresh</p>
+                <p id="name">Potato</p>
+                <p class="vegetable-price">₹<span id="potato-old-price">20.00</span></p>
+                <p class="vegetable-new-price">₹<span id="potato-new-price">15.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('potato')">Add to Cart</button>
+            </div>
+            <!-- Additional vegetable items -->
+            <div class="vegetable-item">
+                <img src="broccoli.png" alt="Broccoli">
+                <p id="fresh">Fresh</p>
+                <p id="name">Broccoli</p>
+                <p class="vegetable-price">₹<span id="broccoli-old-price">60.00</span></p>
+                <p class="vegetable-new-price">₹<span id="broccoli-new-price">50.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('broccoli')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="cauliflower.png" alt="Cauliflower">
+                <p id="fresh">Fresh</p>
+                <p id="name">Cauliflower</p>
+                <p class="vegetable-price">₹<span id="cauliflower-old-price">50.00</span></p>
+                <p class="vegetable-new-price">₹<span id="cauliflower-new-price">40.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('cauliflower')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="spinach.png" alt="Spinach">
+                <p id="fresh">Fresh</p>
+                <p id="name">Spinach</p>
+                <p class="vegetable-price">₹<span id="spinach-old-price">30.00</span></p>
+                <p class="vegetable-new-price">₹<span id="spinach-new-price">25.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('spinach')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="beetroot.png" alt="Beetroot">
+                <p id="fresh">Fresh</p>
+                <p id="name">Beetroot</p>
+                <p class="vegetable-price">₹<span id="beetroot-old-price">25.00</span></p>
+                <p class="vegetable-new-price">₹<span id="beetroot-new-price">20.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('beetroot')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="lettuce.png" alt="Lettuce">
+                <p id="fresh">Fresh</p>
+                <p id="name">Lettuce</p>
+                <p class="vegetable-price">₹<span id="lettuce-old-price">15.00</span></p>
+                <p class="vegetable-new-price">₹<span id="lettuce-new-price">10.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('lettuce')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="pumpkin.png" alt="Pumpkin">
+                <p id="fresh">Fresh</p>
+                <p id="name">Pumpkin</p>
+                <p class="vegetable-price">₹<span id="pumpkin-old-price">45.00</span></p>
+                <p class="vegetable-new-price">₹<span id="pumpkin-new-price">35.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('pumpkin')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="radish.png" alt="Radish">
+                <p id="fresh">Fresh</p>
+                <p id="name">Radish</p>
+                <p class="vegetable-price">₹<span id="radish-old-price">20.00</span></p>
+                <p class="vegetable-new-price">₹<span id="radish-new-price">15.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('radish')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="bellPepper.png" alt="Bell Pepper">
+                <p id="fresh">Fresh</p>
+                <p id="name">Bell Pepper</p>
+                <p class="vegetable-price">₹<span id="bellPepper-old-price">40.00</span></p>
+                <p class="vegetable-new-price">₹<span id="bellPepper-new-price">30.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('bellPepper')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="eggplant.png" alt="Eggplant">
+                <p id="fresh">Fresh</p>
+                <p id="name">Eggplant</p>
+                <p class="vegetable-price">₹<span id="eggplant-old-price">35.00</span></p>
+                <p class="vegetable-new-price">₹<span id="eggplant-new-price">30.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('eggplant')">Add to Cart</button>
+            </div>
+            <div class="vegetable-item">
+                <img src="zucchini.png" alt="Zucchini">
+                <p id="fresh">Fresh</p>
+                <p id="name">Zucchini</p>
+                <p class="vegetable-price">₹<span id="zucchini-old-price">50.00</span></p>
+                <p class="vegetable-new-price">₹<span id="zucchini-new-price">40.00</span></p>
+                <button class="add-to-cart-btn" onclick="addToCart('zucchini')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart"></div>
+        <footer>
+            <p>&copy; Farm-to-Table-Marketplace</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
