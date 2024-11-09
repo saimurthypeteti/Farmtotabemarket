@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('farm_land-2.jpg') center center/cover no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#d1 {
+    background-color: #228B22;
+    color: #fff;
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+#d1 a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+#d1 a:hover {
+    text-decoration: underline;
+}
+#cart-link {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFD700;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+#cart-link img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+#header {
+    text-align: center;
+    margin: 20px 0;
+}
+#header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2F4F4F;
+}
+.fruit-item {
+    display: flex;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.8);
+    width: 200px;
+    max-width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    transition: transform 0.2s;
+    height: 350px;
+}
+.fruit-item:hover {
+    transform: scale(1.05);
+}
+.fruit-item img {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.fruit-item p {
+    font-weight: 500;
+    margin: 0;
+}
+.fruit-price {
+    font-size: 14px;
+    color: #555;
+    text-decoration: line-through;
+}
+.fruit-new-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #228B22;
+}
+.fruit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+.add-to-cart-btn {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.add-to-cart-btn:hover {
+    background-color: #1e7a1e;
+}
+/* Cart display styles */
+#cart {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 200px;
+}
+#cart h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #228B22;
+}
+#cart .cart-item {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+#cart .cart-item:last-child {
+    border-bottom: none;
+}
+#cart .close-cart {
+    cursor: pointer;
+    color: red;
+    font-size: 12px;
+    text-align: right;
+}
+#checkout-btn {
+margin-top: 10px;
+ padding: 8px 16px;
+ background-color: #228B22;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-weight: bold;
+}
+footer{color: white;
+background-color: #228B22;
+width:100%;
+text-align:center;
+border-top: 2px solid;
+border-radius: 2px;
+}
