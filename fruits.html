@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-fru.css">
+        
+       
+<script src="far.js">
+        
+ </script>
+</head>
+<body>
+    <div id="main">
+        <div id="d1">
+            <h1>Farm-to-Table Marketplace</h1>
+        
+            <nav>
+                <a href="vegetables.html">Vegetables</a>
+                <a href="fruits.html">Fruits</a>
+                <a href="farmer.html">Farmer Details</a>
+                <a href="loging.html">Loging</a>
+            </nav>
+            <a href="#" id="cart-link" onclick="viewCart()">
+                <img src="cart.png" alt="Cart Icon"> View Cart <span id="cart-count">(0)</span>
+            </a>
+        </div>
+
+        <div id="header">
+            <h3>Available Fruits:</h3>
+        </div>
+
+        <div class="fruit-list">
+            <div class="fruit-item">
+                <img src="apple.png" alt="Apple">
+                <p><b>Apple</b></p>
+                <p class="fruit-price">₹2.00</p>
+                <p class="fruit-new-price">₹1.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('apple')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="banana.png" alt="Banana">
+                <p><b>Banana</b></p>
+                <p class="fruit-price">₹1.00</p>
+                <p class="fruit-new-price">₹0.80</p>
+                <button class="add-to-cart-btn" onclick="addToCart('banana')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="grapes.png" alt="Grapes">
+                <p><b>Grapes</b></p>
+                <p class="fruit-price">₹3.00</p>
+                <p class="fruit-new-price">₹2.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('grapes')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="oranges.png" alt="Orange">
+                <p><b>Orange</b></p>
+                <p class="fruit-price">₹1.50</p>
+                <p class="fruit-new-price">₹1.20</p>
+                <button class="add-to-cart-btn" onclick="addToCart('orange')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="mango.png" alt="Mango">
+                <p><b>Mango</b></p>
+                <p class="fruit-price">₹2.50</p>
+                <p class="fruit-new-price">₹2.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('mango')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="pineapple.png" alt="Pineapple">
+                <p><b>Pineapple</b></p>
+                <p class="fruit-price">₹3.50</p>
+                <p class="fruit-new-price">₹3.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('pineapple')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="watermelon.png" alt="Watermelon">
+                <p><b>Watermelon</b></p>
+                <p class="fruit-price">₹4.00</p>
+                <p class="fruit-new-price">₹3.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('watermelon')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="strawberry.png" alt="Strawberry">
+                <p><b>Strawberry</b></p>
+                <p class="fruit-price">₹2.50</p>
+                <p class="fruit-new-price">₹2.00</p>
+                <button class="add-to-cart-btn" onclick="addToCart('strawberry')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="blueberry.png" alt="Blueberry">
+                <p><b>Blueberry</b></p>
+                <p class="fruit-price">₹3.00</p>
+                <p class="fruit-new-price">₹2.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('blueberry')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="cherry.png" alt="Cherry">
+                <p><b>Cherry</b></p>
+                <p class="fruit-price">₹5.00</p>
+                <p class="fruit-new-price">₹4.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('cherry')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="kiwi.png" alt="Kiwi">
+                <p><b>Kiwi</b></p>
+                <p class="fruit-price">₹1.50</p>
+                <p class="fruit-new-price">₹1.20</p>
+                <button class="add-to-cart-btn" onclick="addToCart('kiwi')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="papaya.png" alt="Papaya">
+                <p><b>Papaya</b></p>
+                <p class="fruit-price">₹2.00</p>
+                <p class="fruit-new-price">₹1.80</p>
+                <button class="add-to-cart-btn" onclick="addToCart('papaya')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="peach.png" alt="Peach">
+                <p><b>Peach</b></p>
+                <p class="fruit-price">₹1.75</p>
+                <p class="fruit-new-price">₹1.50</p>
+                <button class="add-to-cart-btn" onclick="addToCart('peach')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="pomegranate.png" alt="Pomegranate">
+                <p><b>Pomegranate</b></p>
+                <p class="fruit-price">₹3.00</p>
+                <p class="fruit-new-price">₹2.80</p>
+                <button class="add-to-cart-btn" onclick="addToCart('pomegranate')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="pear.png" alt="Pear">
+                <p><b>Pear</b></p>
+                <p class="fruit-price">₹1.50</p>
+                <p class="fruit-new-price">₹1.20</p>
+                <button class="add-to-cart-btn" onclick="addToCart('pear')">Add to Cart</button>
+            </div>
+            <div class="fruit-item">
+                <img src="plum.png" alt="Plum">
+                <p><b>Plum</b></p>
+                <p class="fruit-price">₹2.00</p>
+                <p class="fruit-new-price">₹1.75</p>
+                <button class="add-to-cart-btn" onclick="addToCart('plum')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart"></div>
+        <footer>
+            <p>&copy; Farm-to-Table-Marketplace</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
